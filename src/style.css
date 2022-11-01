@@ -61,4 +61,5 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
+  text-decoration: none;
 }
