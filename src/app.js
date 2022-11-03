@@ -47,8 +47,6 @@ function displayTemperature(response) {
   iconElement.setAttribute(
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
-
-    //`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
 }
@@ -56,7 +54,6 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "3a56f1f74a86f746bo9c87aa352t8f0a";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-  // `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayTemperature);
 }
