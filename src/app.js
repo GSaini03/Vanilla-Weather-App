@@ -70,6 +70,7 @@ function showFahrenheitTemp(event) {
   //remove the active class of the celsius link
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
+
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
@@ -79,6 +80,7 @@ function showCelsiusTemp(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
+
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
@@ -90,24 +92,6 @@ fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemp);
-
-//function convertToFahrenheit(event) {
-//event.preventDefault();
-//let temp = document.querySelector("#temperature");
-//temp.innerHTML = "64";
-// }
-
-//function convertToCelsius(event) {
-//event.preventDefault();
-//let temp = document.querySelector("#temperature");
-//temp.innerHTML = "18";
-// }
-
-// let fahrenLink = document.querySelector("#fahrenheit");
-// fahrenLink.addEventListener("click", convertToFahrenheit);
-
-// let CelLink = document.querySelector("#celsius");
-// CelLink.addEventListener("click", convertToCelsius);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);

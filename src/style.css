@@ -41,13 +41,14 @@ footer {
   text-align: center;
   margin-top: 10px;
   font-size: 14px;
-  text-decoration: none;
+
   color: black;
   font-weight: 300;
 }
 
 footer a {
   color: rgb(4, 4, 251);
+  text-decoration: none;
 }
 
 li:first-letter {
@@ -110,4 +111,23 @@ li:first-letter {
 
 #celsius {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
 }
