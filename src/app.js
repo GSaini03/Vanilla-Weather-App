@@ -60,13 +60,13 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row gx-3 weather-forecast" style="text-align: center">`;
+  let forecastHTML = `<div class="row gx-3 weather-forecast" style="text-align: center shadow">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       // forecastHTML + = ` add the whole HTML from below `
       forecastHTML += `
   <div class="col-2">
-  <div class="small-card mb-1 h-100">
+  <div class="small-card mb-1 h-100 shadow">
  
   <div class="weather-forecast-date">${formatDay(forecastDay.time)}</div>
   
