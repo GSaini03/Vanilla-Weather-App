@@ -68,7 +68,7 @@ li:first-letter {
 .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
 }
 
@@ -81,7 +81,7 @@ li:first-letter {
   padding: 30px;
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background: rgb(185, 224, 243) 11.1%;
+  background: #b9e0f3bd;
   box-shadow: 7px 7px 28px 7px rgba(0, 0, 0, 0.2);
 }
 
@@ -101,6 +101,30 @@ li:first-letter {
   text-decoration: none;
 }
 
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.weather-forecast-temperatures {
+  font-size: 14px;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+#icon {
+  height: 85px;
+  width: 85px;
+}
+
 #celsius-link {
   text-decoration: none;
 }
@@ -111,23 +135,4 @@ li:first-letter {
 
 #celsius {
   text-decoration: none;
-}
-
-.weather-forecast {
-  margin: 20px;
-  text-align: center;
-  color: #000;
-}
-
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.6;
-}
-
-.weather-forecast-temperatures {
-  font-size: 13px;
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
 }

@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/5b0b12f9fb.js"
-      crossorigin="anonymous"
-    ></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
+    <script
+      src="https://kit.fontawesome.com/5b0b12f9fb.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
@@ -30,7 +33,7 @@
                 <input
                   type="search"
                   placeholder="Type a city"
-                  class="form-control shadow-sm border border-success p-2 border-opacity-10 rounded-pill"
+                  class="form-control shadow-sm border border-Primary p-2 border-opacity- rounded-pill"
                   autocomplete="off"
                   autofocus="on"
                   id="city-input"
@@ -41,14 +44,15 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form control shadow-sm border border-success p-2 border-opacity-10 rounded-pill btn btn-info w-100"
+                  class="form control shadow-sm border border-Primary p-2 border- rounded-pill btn btn-Primary w-100"
+                  id="search-button"
                 />
               </div>
               <div class="col-2">
                 <button
                   type="button"
                   value="Current location"
-                  class="form control shadow-sm border border-success p-2 border-opacity-10 rounded-pill btn btn-info w-100"
+                  class="form control shadow-sm border border-Primary p-2 border- rounded-pill btn btn-Primary w-100"
                   id="currentLocation-button"
                 >
                   <i class="fa-solid fa-location-dot fa-xl"> </i>
@@ -60,7 +64,7 @@
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li><span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -70,10 +74,7 @@
                 <img src="" alt="" id="icon" />
                 <div>
                   <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a></span
-                  >
+                  ><span class="units">°C </span>
                 </div>
               </div>
             </div>
