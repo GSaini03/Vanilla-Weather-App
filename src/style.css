@@ -37,6 +37,10 @@ a {
   text-decoration: none;
 }
 
+h6 {
+  opacity: 0.6;
+}
+
 footer {
   text-align: center;
   margin-top: 10px;
@@ -101,8 +105,16 @@ li:first-letter {
   text-decoration: none;
 }
 
+.small-card {
+  background-clip: border-box;
+  background-color: #7bccf5b0;
+  border: 1px solid #77c3e9c9;
+  border-radius: 10px;
+  box-shadow: 7px 7px 28px 7px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
 .weather-forecast {
-  margin: 20px;
   text-align: center;
   color: #000;
 }
